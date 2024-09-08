@@ -1,12 +1,8 @@
 [package]
 name = "flydoc"
-version = "1.0"
+version = "1.0.1"
 
 [dependencies]
 flylibc = { git="git@github.com:drewagislason/flylibc.git" }
 # flylibc = { path="../flylibc/lib/flylibc.a", inc="../flylibc/inc" }
 # flylibc = { path="../flylibc/" }
-
-[compiler]
-# .c = { cc="cc {in} -c {incs} -Wall -Werror -o {out}", ll="cc {in} -o {out}", cc_dbg="-g -DDEBUG=1", ll_dbg="-g" }
-# .cc.cpp.c++ = { cc="c++ {in} -c {incs} -Wall -Werror -o {out}", ll="c++ {in} -o {out}", ar="ar {out} -rcs {in}" }

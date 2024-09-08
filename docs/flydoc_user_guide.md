@@ -6,23 +6,11 @@ License: [MIT](https://mit-license.org)
 
 A command-line tool for creating source code documentation HTML from commented source code.
 
-All doc comments are treated like markdown. Like markdown, flydoc itself is minimalist. It creates
-static HTML web pages that can then be hosted anywhere. or it can create a combined markdown file
-that can be easily turned into a .pdf by other tools.
-
-flydoc encourages a single source of truth: that is, the comments and examples in your source code
-are also the developer documentation for functions and methods. Lengthy API documentation,
-tutorials and examples with graphics can go into markdown files that become part of the same
-documentation and become part of your git check-in process.
-
-flydoc is mobile first, that is, the HTML output looks great on a smart phone, tablet or desktop.
-The HTML colors and images can be customized per project.
-
 ## 1 - Features
 
 * Create developer API documentation from commented source code
 * All comments treated as markdown for rich display in HTML
-* Works with with most coding languages, C/C++, Java, Python, Rust, Javascript, etc...
+* Works with with most coding languages, C/C++, Java, Python, Go, Rust, Javascript, etc...
 * Supports all Unicode symbols, emoji and languages by using UTF-8 as encoding
 * Control what is documented and what is not included (public APIs vs private functions/methods)
 * Mobile first: HTML looks great on a phone, tablet or desktop
@@ -48,10 +36,9 @@ If creating markdown output from source code documentation, the file can can eas
 a .pdf using tools like Marked 2, MacDown or Typora.
 
 For an example of flydoc output, see: <https://drewagislason.github.io/index.html>  
-For markdown, see: <https://www.markdownguide.org/cheat-sheet/>  
+For markdown usage, see: <https://www.markdownguide.org/cheat-sheet/>  
 
-flydoc is named after [Firefly](https://en.wikipedia.org/wiki/Firefly_(TV_series), an iconic space
-western. Not affiliated.
+flydoc is named after [Firefly](https://en.wikipedia.org/wiki/Firefly_(TV_series), an iconic space western.
 
 ### 1.2 - Usage
 
@@ -60,7 +47,7 @@ flydoc runs in the command-line terminal. Below is `flydoc --help`:
 ```
 flydoc v1.0
 
-Usage = flydoc [-n] [-o out/] [-s] [-v] [--combine] [--exts .c.js] [--local] [--markdown] [--noindex] in...
+Usage = flydoc [-n] [-o out/] [-s] [-v] [--exts .c.js] [--local] [--markdown] [--noindex] in...
 
 Options:
 -n             Parse inputs only, no output, useful to check for warnings

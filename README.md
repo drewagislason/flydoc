@@ -1,4 +1,4 @@
-# flydoc READFME.md
+# flydoc README.md
 
 Version 1.0 released 08/31/2024  
 Copyright (c) 2024, Drew Gislason  
